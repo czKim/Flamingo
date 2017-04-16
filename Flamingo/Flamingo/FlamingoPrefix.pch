@@ -1,0 +1,17 @@
+//
+//  FlamingoPrefix.pch
+//  Flamingo
+//
+//  Created by sungju_kim on 2017/4/7.
+//  Copyright © 2017年 cz_Kim. All rights reserved.
+//
+
+#ifndef FlamingoPrefix_pch
+#define FlamingoPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#include "Masonry.h"
+
+#endif /* FlamingoPrefix_pch */

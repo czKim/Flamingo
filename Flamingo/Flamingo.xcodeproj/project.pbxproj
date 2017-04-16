@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FF3746F1E975D37008FECBF /* FlamingoPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlamingoPrefix.pch; sourceTree = "<group>"; };
 		4FDC7F12811369F5066861C0 /* Pods-Flamingo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flamingo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flamingo/Pods-Flamingo.release.xcconfig"; sourceTree = "<group>"; };
 		ABDB061825FBED76233CEFF7 /* libPods-Flamingo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Flamingo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F9E5A41D2CBAAE0073F3A0 /* Flamingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +127,7 @@
 				C0F9E5B51D2CBAAE0073F3A0 /* LaunchScreen.storyboard */,
 				C0F9E5B81D2CBAAE0073F3A0 /* Info.plist */,
 				C0F9E5A71D2CBAAE0073F3A0 /* Supporting Files */,
+				1FF3746F1E975D37008FECBF /* FlamingoPrefix.pch */,
 			);
 			path = Flamingo;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 				TargetAttributes = {
 					C0F9E5A31D2CBAAE0073F3A0 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4WM662842P;
 					};
 					C0F9E5BC1D2CBAAE0073F3A0 = {
 						CreatedOnToolsVersion = 7.2;
@@ -489,10 +492,14 @@
 			baseConfigurationReference = EDBE6916A26F06347149C53D /* Pods-Flamingo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4WM662842P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Flamingo/FlamingoPrefix.pch";
 				INFOPLIST_FILE = Flamingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cz-Kim.Flamingo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -501,10 +508,14 @@
 			baseConfigurationReference = 4FDC7F12811369F5066861C0 /* Pods-Flamingo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4WM662842P;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Flamingo/FlamingoPrefix.pch";
 				INFOPLIST_FILE = Flamingo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cz-Kim.Flamingo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
